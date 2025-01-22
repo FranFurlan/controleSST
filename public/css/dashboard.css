@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    max-width: 150px;
+    height: 50px;
+    border-radius: 5px;
+}
+header h1 {
+    font-size: 20px;
+}
+main {
+    padding: 20px;
+}
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card h2 {
+    margin: 0 0 10px;
+}
+.card p {
+    margin: 0;
+    color: #6c757d;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #343a40;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Saída de EPI</title>
+    <link rel="icon" href="../public/assets/simboloLogo.png" type="image/jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+        }
+        header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    max-width: 150px;
+    height: 50px;
+    border-radius: 5px;
+}
+header h1 {
+    font-size: 20px;
+}
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        select, input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .signature-container {
+            margin-top: 20px;
+            border: 1px dashed #ccc;
+            height: 150px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #343a40;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+    header h1 {
+        opacity: 0;
+    }
+    header img {
+        margin-bottom: 10px;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        height: auto;
+    }
+    header h1 {
+        opacity: 0;
+    }
+    header img {
+        width: 120px;
+        height: 40px;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 100%;
+        width: 100%;
+    }
+    footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../public/assets/logo.jpg" alt="Logo da Empresa">
+        <h1>Distribuição - EPI </h1>
+    </header>
+    <h1>Registro de Saída de EPI</h1>
+    <div class="form-container">
+        <form action="/submit" method="post">
+            <!-- Nome do Colaborador -->
+            <div class="form-group">
+                <label for="nome">Nome do Colaborador:</label>
+                <select id="nome" name="nome" required>
+                    <option value="">Selecione...</option>
+                    <option value="João">João</option>
+                    <option value="Maria">Maria</option>
+                    <option value="José">José</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <!-- Equipamento de Proteção Individual -->
+            <div class="form-group">
+                <label for="epi">Equipamento de Proteção Individual (EPI):</label>
+                <select id="epi" name="epi" required>
+                    <option value="">Selecione...</option>
+                    <option value="capacete">Capacete</option>
+                    <option value="luvas">Luvas</option>
+                    <option value="óculos">Óculos</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <!-- Data de Retirada -->
+            <div class="form-group">
+                <label for="data">Data de Retirada:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <!-- Local para Assinatura Touchscreen -->
+            <div class="form-group">
+                <label for="assinatura">Assinatura:</label>
+                <div class="signature-container" id="assinatura">
+                    <p>Assine aqui (use a tela para assinar):</p>
+                    <!-- Implementar a funcionalidade de assinatura touchscreen aqui -->
+                </div>
+            </div>
+
+            <button type="submit" class="button">Registrar Saída</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2025 Grupo Loop. Todos os direitos reservados.
+    </footer>
+</body>
+</html>

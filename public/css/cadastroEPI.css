@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+header img {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+header h1 {
+    font-size: 20px;
+}
+main {
+    padding: 20px;
+}
+.form-container{
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.form-container h2, .table-container h2 {
+    margin-bottom: 15px;
+}
+.form-container form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    align-items: center;
+}
+.form-container form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+    display: block;
+}
+.form-container form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-container form input, .form-container form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.form-container form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.form-container form button:hover {
+    background-color: #45a049;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background-color: #f4f4f4;
+}
+.valid-status {
+    font-weight: bold;
+}
+.valid-status.valid {
+    color: green;
+}
+.valid-status.expired {
+    color: red;
+}
+.valid-status.near-expiry {
+    color: orange;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        opacity: 0;
+    }
+    header img {
+        margin-bottom: 10px;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        height: auto;
+    }
+    header h1 {
+        opacity: 0;
+    }
+    header img {
+        width: 120px;
+        height: 40px;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 100%;
+        width: 100%;
+    }
+    footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
