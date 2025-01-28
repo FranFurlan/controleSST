@@ -7,13 +7,19 @@
     <link rel="icon" href="../public/assets/simboloLogo.png" type="image/jpg">
     <link rel="stylesheet" href="../public/css/styles.css">
 </head>
-<body>
+<body>      
+    <header>
+        <img src="../public/assets/logo.jpg" alt="Logo da Empresa">
+        
+        <img id="home" src="../public/assets/botao-home.png" alt="imagem para botão home">
+    </header>
     <div class="login-container">
         <img src="../public/assets/logo.png" alt="Logo da Empresa Loop">
         <h1>Cadastre nova senha</h1>
         <form>
-            <input id="userSenha" type="text" placeholder="Usuário" name="username" required>
+            <input id="userSenha" type="text" placeholder="Usuário (email)" name="username" required>
             <input id="novaSenha" type="password" placeholder="Nova senha" name="password" required>
+            <input id="checkSenha" type="password" placeholder="Confirmar senha" name="checkpassword" required>
             <button id="alterarSenhaBtn" type="submit">Alterar senha</button>
         </form>
     </div>

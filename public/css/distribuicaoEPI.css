@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+}
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header img {
+    max-width: 150px;
+    height: 50px;
+    border-radius: 5px;
+}
+#home{
+    background-color: beige;
+}
+
+header h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    flex: 1; 
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+.form-groupD{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+input[type="radio"]{
+    margin-bottom: 10px;
+}
+.form-groupD label{
+    margin-right: 20px;
+}
+.form-groupS{
+    margin-bottom: 15px;
+    visibility: hidden;
+}
+select, input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.signature-container {
+    margin-top: 20px;
+    border: 1px dashed #ccc;
+    height: 150px;
+}
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.button:hover {
+    background-color: #45a049;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #343a40;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header img {
+        margin-bottom: 10px;
+    }
+    #home{
+        width: 50px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    } 
+    table {
+        min-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        height: auto;
+    }
+    header img {
+        width: 120px;
+        height: 40px;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 100%;
+        width: 100%;
+    }
+    footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

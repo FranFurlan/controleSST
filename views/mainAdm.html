@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Principal</title>
+    <link rel="icon" href="../public/assets/simboloLogo.png" type="image/jpg">
+    <link rel="stylesheet" href="../public/css/main.css">
+</head>
+<body>
+
+    <header>
+        <img src="../public/assets/logo.jpg" alt="Logo da Empresa">
+        <h1>Controle - SST </h1>
+        <button id="logoutButton">Sair</button>
+    </header>
+    
+<main>
+    <div id="adm">
+        <!-- Cadastro de EPI/EPC -->
+        <div class="button-container">
+            <a href="cadastroEPIEPC.html" target="_blank">
+                <img src="../public/assets/registroEpi.png" alt="Registro de EPI">
+                <div class="button-text">Cadastro EPI/EPC</div>
+            </a>
+        </div>
+
+        <!-- Cadastro Funcionário -->
+        <div class="button-container">
+            <a href="cadastroFuncionario.html" target="_blank">
+                <img src="../public/assets/registrado.png" alt="Registrar Colaborador">
+                <div class="button-text">Cadastro Funcionário</div>
+            </a>
+        </div>
+
+        <!-- Cadastro Obra -->
+        <div class="button-container">
+            <a href="cadastroObra.html" target="_blank">
+                <img src="../public/assets/obra.png" alt="Registrar Colaborador">
+                <div class="button-text">Cadastro Obra</div>
+            </a>
+        </div>
+
+        <!-- Controle de Estoque -->
+        <div class="button-container">
+            <a href="registrar_funcionario.html" target="_blank">
+                <img src="../public/assets/estoque.png" alt="Registrar Colaborador">
+                <div class="button-text">Controle Estoque</div>
+            </a>
+        </div>
+
+        <!-- Visão Geral de EPI -->
+        <div class="button-container">
+            <a href="dashboard.html" target="_blank">
+                <img src="../public/assets/dashboard.png" alt="Visão Geral de EPI">
+                <div class="button-text">Visão Geral</div>
+            </a>
+        </div>
+    </div>
+    <div id="all">
+            <!-- Solicitação EPI -->
+        <div class="button-container">
+            <a href="solicitarEPI.html" target="_blank">
+                <img src="../public/assets/pedidoEpi.png" alt="Solicitar EPI">
+                <div class="button-text">Solicitação EPI</div>
+            </a>
+        </div>
+
+        <!-- Registro de EPI -->
+        <div class="button-container">
+            <a href="registro-EPI.html" target="_blank">
+                <img src="../public/assets/entregaEpi.png" alt="Distribuição de EPI">
+                <div class="button-text">Registro de EPI/EPC</div>
+            </a>
+        </div>
+    </div>
+</main>
+<footer>
+    &copy; 2025 Grupo Loop. Todos os direitos reservados.
+</footer>
+<script type="module" src="../public/js/firebase-config.js"></script>
+<script type="module" src="../public/js/login.js"></script>
+</body>
+</html>

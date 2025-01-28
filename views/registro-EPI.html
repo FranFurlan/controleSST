@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Saída de EPI</title>
+    <link rel="icon" href="../public/assets/simboloLogo.png" type="image/jpg">
+    <link rel="stylesheet" href="../public/css/distribuicaoEPI.css">
+</head>
+<body>
+    <header>
+        <img src="../public/assets/logo.jpg" alt="Logo da Empresa">
+        <h1>Registro EPI</h1>
+        <img id="home" src="../public/assets/botao-home.png" alt="imagem para botão home">
+    </header>
+
+    <div class="form-container">
+        <form action="/submit" method="post">
+            <!-- Nome do Colaborador -->
+            <div class="form-group">
+                <label for="nome">Nome do Colaborador:</label>
+                <select id="nome" name="nome" required>
+                    <option value="">Selecione...</option>
+                    <option value="João">João</option>
+                    <option value="Maria">Maria</option>
+                    <option value="José">José</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <!-- Equipamento de Proteção Individual -->
+            <div class="form-group">
+                <label for="epi">Equipamento de Proteção Individual (EPI):</label>
+                <select id="epi" name="epi" required>
+                    <option value="">Selecione...</option>
+                    <option value="capacete">Capacete</option>
+                    <option value="luvas">Luvas</option>
+                    <option value="óculos">Óculos</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <!-- Retirada ou DEvolução -->
+            <div class="form-groupD">
+                <input type="radio" id="ret" name="ret" required>
+                <label for="data">Retirada</label>
+                
+                <input type="radio" id="dev" name="dev" required>
+                <label for="data">Devolução</label>                
+            </div>
+
+            <!-- Data de Retirada -->
+            <div class="form-groupS">
+                <label for="dataR">Data de Retirada:</label>
+                <input type="date" id="dataR" name="dataR" required>
+            </div>
+
+            <!-- Data de Entrada -->
+            <div class="form-groupS">
+                <label for="dataD">Data de Devolução:</label>
+                <input type="date" id="dataD" name="dataD" required>
+            </div>
+
+            <!-- Local para Assinatura Touchscreen -->
+            <div class="form-group">
+                <label for="assinatura">Assinatura:</label>
+                <div class="signature-container" id="assinatura">
+                    <p>Assine aqui (use a tela para assinar):</p>
+                    <!-- Implementar a funcionalidade de assinatura touchscreen aqui -->
+                </div>
+            </div>
+
+            <button type="submit" class="button">Registrar Saída</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2025 Grupo Loop. Todos os direitos reservados.
+    </footer>
+</body>
+</html>

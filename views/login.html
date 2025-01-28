@@ -10,18 +10,20 @@
 <body>
     <div class="login-container">
         <img src="../public/assets/logo.png" alt="Logo da Empresa Loop">
-        <h1>Controle de EPIs</h1>
+        <h1>Controle de EPI/EPC</h1>
         <h2>Bem-vindo(a)</h2>
-        <form>
-            <input id="loginUser" type="text" placeholder="Usuário" name="username" required>
-            <input id="loginSenha" type="password" placeholder="Senha" name="password" required>
+        <form id="login-form">
+            <input id="login-email" type="email" placeholder="E-mail" name="login-email" required>
+            <input id="login-password" type="password" placeholder="Senha" name="login-password" required>
             <button id="loginBtn" type="submit">Login</button>
         </form>
-        <a href="esqueceuSenha.html">Esqueceu a senha?</a>
+        <button id="forgotPasswordButton">Esqueceu a senha?</button>
         <a href="cadastro-login.html">Cadastre-se</a>
     </div>
     <footer>
         &copy; 2025 Grupo Loop. Todos os direitos reservados.
     </footer>
+    <script type="module" src="../public/js/firebase-config.js"></script>
+    <script type="module" src="../public/js/login.js"></script>
 </body>
 </html>
